@@ -14,10 +14,7 @@ festivals1 = '6. jūnijs'
 festivals2 = '28. jūnijs'
 festivals3 = '13. jūlijs'
 festivals4 = '5. augusts'
-print('AAAAAAAAAA')
-print('AAAAAAAAAA')
-print('AAAAAAAAAA')
-print('AAAAAAAAAA')
+
 
 datumi = { #vārdnīca ar pasākumu datumiem
     'koncerts' : [koncerts1,koncerts2 ,koncerts3 ],
@@ -55,10 +52,10 @@ def laiks():
 
 print('Sveicināti pasākumu plānotājā!')
 try:
-    while True:
+    while True: #izmanto True ciklu, lai pēc nepareizas datu ievades lietotājs var atbildēt vēlreiz
         print('Pasākumi veidi: ', '\n1 - Koncerts', '\n2 - Festivals', '\n3 - Sacencibas')
         veids = int(input('Ievadiet kuru no pasākumiem apmeklēsiet (1, 2 vai 3): '))
-
+        #veidam tiek sniegts jauna vērtība, lai funkcijas spētu izmantot lietotāj ievadīto izvēli
         if veids == 1:
             veids = 'koncerts'
             break
@@ -69,7 +66,7 @@ try:
             veids = 'sacencibas'
             break
         else:
-            print('Ievadiet no 1 līdz 3 ciparu!')
+            print('Ievadiet ciparu no 1 līdz 3!')
 
         #print(f'{veids} pieejamie datumI: ','\n1  - [veids]')
     #for i in datumi[veids]:
@@ -77,7 +74,7 @@ try:
 
     bilesu_sk = int(input('Cik biļetes vēlaties: '))
 
-    print( 'Kopējā biļešu cena: ',aprekinat_biletes(bilesu_sk, veids), 'EUR')
+    print('Kopējā biļešu cena: ',aprekinat_biletes(bilesu_sk, veids), 'EUR')
 
-except ValueError:
+except ValueError: #pie nepareizas datu veida ievades, tiek brīdināts lietotājs
         print('Lūdzu ievadiet skaitli!')
