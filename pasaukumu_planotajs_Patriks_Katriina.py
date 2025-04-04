@@ -16,6 +16,8 @@ festivals3 = '13. jūlijs'
 festivals4 = '5. augusts'
 print('AAAAAAAAAA')
 print('AAAAAAAAAA')
+print('AAAAAAAAAA')
+print('AAAAAAAAAA')
 
 datumi = { #vārdnīca ar pasākumu datumiem
     'koncerts' : [koncerts1,koncerts2 ,koncerts3 ],
