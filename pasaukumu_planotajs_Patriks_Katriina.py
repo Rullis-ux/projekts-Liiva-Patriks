@@ -72,6 +72,8 @@ try:
     #for i in datumi[veids]:
     print(datumi[veids])
 
+    liet_datums = input()
+
     bilesu_sk = int(input('Cik biļetes vēlaties: '))
 
     print('Kopējā biļešu cena: ',aprekinat_biletes(bilesu_sk, veids), 'EUR')
