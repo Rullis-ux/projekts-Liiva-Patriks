@@ -80,3 +80,11 @@ try:
 
 except ValueError: #pie nepareizas datu veida ievades, tiek brīdināts lietotājs
         print('Lūdzu ievadiet skaitli!')
+
+
+def hallo()
+except ValueError: #pie nepareizas datu veida ievades, tiek brīdināts lietotājs
+        print('Lūdzu ievadiet skaitli!')
+
+
+def hallo()
